@@ -4,9 +4,6 @@
   "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
-    "@emotion/core": "^11.0.0",
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
     "@syncfusion/ej2-react-charts": "^19.4.50",
