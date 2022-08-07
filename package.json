@@ -1,0 +1,36 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "My app for time management",
+    "main": "server.js",
+    "scripts": {
+        "start": "node backend/server.js",
+        "server": "nodemon backend/server.js",
+        "client": "npm start --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    },
+    "author": "Julia Wira",
+    "dependencies": {
+        "@emotion/react": "^11.10.0",
+        "@emotion/styled": "^11.10.0",
+        "@mui/material": "^5.9.3",
+        "@mui/styled-engine-sc": "^5.9.3",
+        "@mui/x-data-grid": "^5.15.1",
+        "@reduxjs/toolkit": "^1.8.3",
+        "bcryptjs": "^2.4.3",
+        "colors": "^1.4.0",
+        "dotenv": "^15.0.0",
+        "express": "^4.17.2",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.1.9",
+        "react-table": "^7.8.0",
+        "recharts": "^2.1.13",
+        "styled-components": "^5.3.5"
+    },
+    "devDependencies": {
+        "concurrently": "^7.0.0",
+        "nodemon": "^2.0.19"
+    }
+}
