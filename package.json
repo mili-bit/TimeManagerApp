@@ -50,5 +50,9 @@
         "@babel/helpers": "^7.18.9",
         "concurrently": "^7.0.0",
         "nodemon": "^2.0.19"
-    }
+    },
+    "engines": {
+        "node": "16.14.2"
+      }
+    
 }
